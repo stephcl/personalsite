@@ -1,0 +1,530 @@
+/*fonts*/
+@import url(http://fonts.googleapis.com/css?family=Rajdhani|Oswald|Roboto+Condensed:300|Open+Sans:700);
+
+/*so what's behind the content*/
+
+body{
+  background: #ffffff;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight:300;
+  color:#4a4a4a;
+}
+
+@media screen and (min-width: 40.064em) {
+  .row{
+    width: auto;
+    font-size: 1.5rem;
+  }
+
+  #content{
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 40.063em) {
+  .row{
+    width: 100%;
+  }
+}
+
+header{
+  padding-top: 1.3em;
+  background: url(bg.png) repeat top left, #0d5573;
+}
+
+h1 {
+  color: #ffffff !important;
+  font-family: "Oswald", "Open Sans", Arial;
+  padding-bottom: .25em;
+  margin-bottom: 0rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 40.063em) {
+  h1 {
+    text-align: center;
+    margin-left:0em;
+  }
+
+  .soc {
+    float: none;
+  }
+}
+
+.amtitle {    
+  font-family: "Oswald", "Open Sans", Arial;
+}
+
+a:hover {
+  color:#f07162;
+}
+
+.columns ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.restitle{
+  font-family: "Oswald", Helvetica;
+  font-size: 1.1em;
+}
+
+header .fa {
+  text-align:center;
+}
+
+footer .soc{
+  float:left;
+}
+
+.fa li {
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+}
+
+.fa li a {
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+-o-transition:.1s; -ms-transition:.1s; -moz-transition:.1s; -webkit-transition:.1s; transition:.1s; -webkit-transition-property: transform; transition-property: transform; -webkit-transform: translateZ(0); transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+header .fa-twitter {
+  background-color: #4da7de;   
+}
+
+header .fa-linkedin {
+  background-color: #3371b7;
+}
+
+header .fa-envelope {
+  background-color: #E47870;
+}
+
+
+.fa-twitter:hover {
+    background-color: #f07162;
+}
+.fa-linkedin:hover {
+    background-color: #f07162;
+}
+.fa-envelope:hover {
+    background-color: #f07162;
+}
+
+.icons{
+  text-align: center;
+  float:none !important;
+}
+
+#twi {
+  padding-right: 2em;
+}
+
+#lin {
+  padding-right: 2em;
+}
+
+/*bg for main content*/
+.row {
+  background-color: #ffffff;
+}
+
+/*some changes wrt foundation.css for the tab navigation */
+dd {
+  background: none !important;
+}
+.tabs dd > a, .tabs .tab-title > a {
+      background-color: none !important;
+}
+
+.tabs {
+  margin-bottom: 0 !important;
+  margin-left: 0; 
+}
+  .tabs:before, .tabs:after {
+    content: " ";
+    display: table; }
+  .tabs:after {
+    clear: both; }
+  .tabs dd, .tabs .tab-title {
+    position: relative;
+    margin-bottom: 0 !important;
+    list-style: none;
+    float: left; }
+    .tabs dd > a, .tabs .tab-title > a {
+      display: block;
+      background-color: none !important;
+      color: #f07162;
+      padding: 1rem 2rem;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1rem; }
+      
+    .tabs dd.active a, .tabs .tab-title.active a {
+      background-color: white;
+      color: #f07162; }
+  .tabs.radius dd:first-child a, .tabs.radius .tab:first-child a {
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px; }
+  .tabs.radius dd:last-child a, .tabs.radius .tab:last-child a {
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px; }
+  .tabs.vertical dd, .tabs.vertical .tab-title {
+    position: inherit;
+    float: none;
+    display: block;
+    top: auto; }
+
+.tabs-content {
+  margin-bottom: 1.5rem;
+  width: 100%; }
+  .tabs-content:before, .tabs-content:after {
+    content: " ";
+    display: table; }
+  .tabs-content:after {
+    clear: both; }
+  .tabs-content > .content {
+    display: none;
+    float: left;
+    padding: 0.9375rem 0;
+    width: 100%; }
+    .tabs-content > .content.active {
+      display: block;
+      float: none; }
+    .tabs-content > .content.contained {
+      padding: 0.9375rem; }
+  .tabs-content.vertical {
+    display: block; }
+    .tabs-content.vertical > .content {
+      padding: 0 0.9375rem; }
+
+/*the tabmenu, main code from http://cssmenumaker.com/menu/simple-responsive-menu#
+ this is how it's responsive, 
+modified to work with foundation 5's way of making tabs with dl and dd instead of ul li section*/
+
+#menu{
+  background: none;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 40.064em) {
+  dl.tabs {
+    text-align: center;
+    padding:0 !important;
+  }
+
+  dl.tabs dd {
+    float: none !important;
+    display: inline-block;
+    padding:0 !important;
+  }
+
+  #cssmenu {
+    width: auto;
+    margin: auto; 
+  }
+}
+
+#cssmenu dl {
+  list-style: none;
+  margin: 0;
+  width:auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenu dl:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#cssmenu dl dd {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#cssmenu.align-right dl dd {
+  float: right;
+}
+
+#cssmenu.align-center dl {
+  text-align: center;
+}
+
+#cssmenu dl dd a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Rajdhani', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .9em;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+#cssmenu dl dd a:hover {
+  color: #f07162;
+}
+
+#cssmenu dl dd a:hover:before {
+  width: 100%;
+}
+
+#cssmenu dl dd a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  
+  background: #ffffff;
+  opacity: .5;
+}
+
+#cssmenu dl dd a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #ffffff;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+#cssmenu dl dd.last > a:after,
+#cssmenu dl dd:last-child > a:after {
+  display: none;
+}
+#cssmenu dl dd.active a {
+  color: #0d5573;
+}
+#cssmenu dl dd.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right dd.last > a:after,
+#cssmenu.align-right dd:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right dd:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 40.063em) {
+  #cssmenu dl dd {
+    float: none;
+    display: block;
+  }
+  #cssmenu dl dd a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1 ;
+    background-color: #0d5573;
+    text-align: center;
+  }
+  #cssmenu dl dd.active a {
+    color: #f07162;
+  }
+
+  #cssmenu dl dd.last > a,
+  #cssmenu dl dd:last-child > a {
+    border: 0;
+  }
+  #cssmenu dl dd a:after {
+    display: none;
+  }
+  #cssmenu dl dd a:before {
+    display: none;
+  }
+}
+
+/* and how to get the transition animation on the tab content, from here: http://stackoverflow.com/questions/14337948/fade-in-tabs-in-zurb-foundation*/
+.tabs-content {
+  zoom: 1;
+  margin-bottom: 1.5rem; 
+
+  /* Customized */
+  display:block:important!
+  opacity: 0;
+}
+  /* Customized */
+  @-webkit-keyframes fadeIn {
+      from { opacity: 0; }
+        to { opacity: 1; }
+  }
+  @keyframes fadeIn {
+      from { opacity: 0; }
+        to { opacity: 1; }
+  }
+  .tabs-content:before, .tabs-content:after {
+    content: " ";
+    display: table; }
+  .tabs-content:after {
+    clear: both; }
+  .tabs-content > .content {
+    display: none;
+    float: left;
+    padding: 0.9375rem 0; }
+    .tabs-content > .content.active {
+
+      /* Customized */
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+      opacity: 1;
+
+      display: block; }
+
+
+/*this is to keep the tabs from having the ugly blue border around it after it's selected*/
+
+dl dd a {
+  border-style:none;
+}
+
+
+footer {
+  background-color: #333333;
+}
+
+.row .row {
+margin-right: 0rem;
+margin-left: 0rem;
+}
+
+a .work {
+  font-family: "Rajdhani", Arial !important;
+  font-weight: bold;
+}
+
+/*based on info from css-tricks.com, for the sticky footer*/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -8rem; 
+}
+
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 8rem; 
+}
+.site-footer {
+  background:#e1e1e1;
+}
+
+.site-footer p {
+  padding:.5em;
+  line-height: .5;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 40.063em) {
+  .site-footer p {
+    text-align: center;
+   margin-left: 0em;
+  }
+
+  .topicons{
+   text-align: center;
+  }
+
+  .fixed {
+    min-width:0;
+    width:auto;
+    margin:auto;
+    background: blue;
+    opacity:0.6;
+    left: auto;
+  }
+
+  .magellan-container {
+    background: #e1e1e1;
+    color:#123456;
+  }
+
+  #top{
+    background: url(bg.png) repeat top left, #0d5573
+  }
+
+  h1{
+    color:#e1e1e1;
+  }
+}
+
+.edu{
+  margin-bottom:.5rem;
+}
+
+.jobtitle{
+  margin-bottom:.5rem;
+}
+
+.twitter-timeline {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  min-width: 90% !important;
+}
+
+
+a .work {
+  font-family: "Rajdhani", Arial !important;
+  font-weight: bold;
+}
+

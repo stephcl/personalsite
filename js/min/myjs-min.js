@@ -1,0 +1,1 @@
+$(".accordion dd").on("click","a:eq(0)",function(i){var n=$(this).parent();n.hasClass("active")?$(".accordion dd div.content:visible").slideToggle("normal"):($(".accordion dd div.content:visible").slideToggle("normal"),$(this).parent().find(".content").slideToggle("normal"))});
